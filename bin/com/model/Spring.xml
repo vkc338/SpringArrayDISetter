@@ -1,0 +1,25 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="con" class="com.model.Contactdetail">
+		<property name="countrycode" value="11" />
+		<property name="mobno">
+
+			<list>
+				<value>9582923629</value>
+				<value>7982929621</value>
+				<value>1234567897</value>
+
+
+			</list>
+
+		</property>
+		</bean>
+
+		<bean id="st" class="com.model.Student">
+			<property name="name" value="vipin" />
+			<property name="contacts" ref="con" />
+		</bean>
+
+
+</beans>
